@@ -1,6 +1,7 @@
 # About question 
 In this I  had made one function named birthdayCakeCandles.
-Then I have used the max function to find the maximum number from that array.
+Then i took a user input for the elements i want in an array.
+Then I have made another function max find the maximum number from that array.
 
 ![alt text](cake_image.jpeg)
 
