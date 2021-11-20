@@ -1,3 +1,4 @@
+const readline = require("readline-sync")
 function birthdayCakeCandles(candles) {
     var max = candles[0]
     var count = 0
@@ -6,6 +7,7 @@ function birthdayCakeCandles(candles) {
             max=candles[i]
         }
     }
+    console.log("max number",max);
     for(var j=0;j<candles.length;j++){
         if(candles[j]==max){
             count = count + 1
@@ -13,5 +15,11 @@ function birthdayCakeCandles(candles) {
     }return(count);
    
 }
-array = [2,2,3,5,2,6,6,6]
+element = readline.questionInt("How many element you want : ")
+array = []
+for(let item=0;item<element;item++){
+    elementOfarray = readline.questionInt("Enter the element: ")
+    array.push(elementOfarray) 
+   
+}
 console.log(birthdayCakeCandles(array))
